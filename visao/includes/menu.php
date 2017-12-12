@@ -16,7 +16,7 @@
 <nav id="menuH">
     <ul>
         <li><a href="#">Agenda</a></li>
-        <li><a href="#">Caixa Diário</a></li>
+        <li><a href="caixa.php">Caixa Diário</a></li>
         <li><a href="#">Despesas</a></li>
         <li><a href="#">Receitas</a></li>
         <li><a href="#">Relatórios</a></li>

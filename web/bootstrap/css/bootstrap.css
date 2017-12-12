@@ -1619,6 +1619,13 @@ pre code {
   padding-right: 15px;
   padding-left: 15px;
 }
+.col-md-4.radioTipo{
+  font-size: 12pt;
+  font-weight: bold;
+
+}
+
+
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
@@ -1937,6 +1944,7 @@ pre code {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
+
   .col-md-12 {
     width: 100%;
   }
@@ -1952,6 +1960,7 @@ pre code {
   .col-md-8 {
     width: 66.66666667%;
   }
+
   .col-md-7 {
     width: 58.33333333%;
   }
@@ -6773,6 +6782,19 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+
+.btn-info.tipo{
+  text-align: center;
+  cursor: hand;
+  background-color: #9d9d9d;
+  font-size: 13pt;
+  border-radius: 10px;
+}
+
+.btn-info.tipo:hover{
+  background-color: #1b6d85;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */

@@ -18,44 +18,12 @@ include_once ("../../controle/config.php");
         <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.ui/1.8.5/jquery-ui.js"></script>
         <link type="text/css" rel="Stylesheet" href="http://ajax.microsoft.com/ajax/jquery.ui/1.8.5/themes/redmond/jquery-ui.css" />
         <script type="text/javascript" src="<?php echo CALENDARIO ?>"></script>
-<script>
-        $(function(){
-        $("#calendario").datepicker({
-        dateFormat: 'dd/mm/yy',
-        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'
-        ],
-        dayNamesMin: [
-        'D','S','T','Q','Q','S','S','D'
-        ],
-        dayNamesShort: [
-        'Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'
-        ],
-        monthNames: [  'Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro',
-        'Outubro','Novembro','Dezembro'
-        ],
-        monthNamesShort: [
-        'Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set',
-        'Out','Nov','Dez'
-        ],
-        nextText: 'Próximo',
-        prevText: 'Anterior'
-        });
-        });
-
-</script>
-
+        <script type="text/javascript" src="<?php echo FUNCOES ?>"></script>
 
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/resources/demos/style.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script>
-            $( function() {
-                $( "#datepicker" ).datepicker();
-                //$("#datepicker").visibility("true");
-            } );
-        </script>
-
 
 
 
@@ -77,22 +45,50 @@ include_once ("../../controle/config.php");
                 <div class="col-md-8"></div>
             </div>
             <fieldset>
-                <legend> Registro de eventos </legend>
+                <legend> Caixa diário </legend>
                 <div class="row">
                     <div class="col-md-1"></div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label class="form-group" alt="datepicker">Selecione a data de registro</label>
-                            <div id="datepicker"></div>
-                        </div>
+
+                    <div class="col-md-5 radioTipo">
+                        <div class="btn-info tipo" ONCLICK="exibeBoxTipo('TipoReceita')">Receita</div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-group" alt="datepicker">Descrição</label>
-                            <input type="text" id="descricao" name="descricao" placeholder="Informe a descrição do evento"/>
-                        </div>
+                    <div class="col-md-5 radioTipo">
+                        <div class="btn-info tipo" ONCLICK="exibeBoxTipo('TipoDespesa')">Despesa</div>
                     </div>
                 </div>
+
+                <!-- Inicio da caixa de exibição do tipo de receita-->
+                <div class="box_tipo_Receita" id="TipoReceita">
+                    <div class="row"></div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1">
+                            <label class="form-group">Tipo</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+
+                                <select class="form-control">
+                                    <option value="1" id="option" onchange="exibeCaixa('membro')">Dízimo</option>
+                                    <option>Oferta</option>
+                                </select>
+                            </div>
+                            <div class="box-membro" id="membro">
+                                testando box membro
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Fim da caixa de exibição do tipo de Despesa-->
+
+                <div class="box_tipo_Despesa" id="TipoDespesa"><!-- Inicio da caixa de exibição do tipo de receita-->
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-8">
+                            Testes
+                        </div>
+                    </div>
+                </div><!-- Fim da caixa de exibição do tipo de Despesa-->
+
             </fieldset>
         </div>
     </section>

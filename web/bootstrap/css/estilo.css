@@ -299,4 +299,19 @@
 
 }
 
+legend{
+    padding: 10px;
+}
+
+.box_tipo_Receita{
+    display: none;
+}
+
+.box_tipo_Despesa{
+    display: none;
+}
+.box-membro{
+    display: none;
+}
+
 

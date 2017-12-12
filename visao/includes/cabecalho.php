@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css"  href="<?php echo PATHCSS ?>"/>
 <link rel="stylesheet" type="text/css"  href="<?php echo PATHCSSESTILO ?>"/>
 <link rel="stylesheet" href="<?php echo PATHCSSWEB ?>"/>
+<link rel="stylesheet" href="<?php echo FUNCOES ?>"/>
 
 
 <header>

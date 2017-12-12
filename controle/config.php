@@ -13,4 +13,5 @@ define("PATCHJQUERY-UI", "http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.
 define ("PACTCHJQUERY-JS", "/Tesouraria/web/bootstrap/js/jquery-3.2.1.min.js");
 define("PATCHJQUERY-UI-JS", "http://code.jquery.com/ui/1.9.0/jquery-ui.js");
 define("CALENDARIO", "/Tesouraria/web/bootstrap/js/calendario.js");
+define("FUNCOES", "/Tesouraria/web/bootstrap/js/funcoes.js");
 
